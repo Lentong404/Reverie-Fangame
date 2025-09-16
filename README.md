@@ -4,6 +4,7 @@ Fangame created in Renpy, a python based engine to create visual novels
 
 Code created that was not originally in use within the engine.
 
+```python
 screen choice(items):
     style_prefix "choice"
     
@@ -17,5 +18,5 @@ screen choice(items):
                 if "color" in i.kwargs:
                     idle_background Transform("gui/button/choice_white_idle.png")
                     hover_background Transform("gui/button/choice_" + i.kwargs["color"] + "_hover.png")
-
+```
 Renpy's engine only uses 1 idle and 1 hover button colors, to have different ones, I used kwargs to select different versions of the idle/hover state images. 
